@@ -7,12 +7,14 @@ extern crate opengl_graphics;
 extern crate piston;
 
 pub use crate::gameboard::Gameboard;
+pub use crate::gameboard_controller::GameboardController;
 use glutin_window::GlutinWindow;
 use opengl_graphics::{GlGraphics, OpenGL};
 use piston::event_loop::{EventLoop, EventSettings, Events};
 use piston::input::RenderEvent;
 use piston::window::WindowSettings;
 mod gameboard;
+mod gameboard_controller;
 
 fn main() {
     let opengl = OpenGL::V3_2;
